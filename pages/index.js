@@ -14,7 +14,11 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
 
-        <meta property="og:url" content="https://tpca.netlify.app/" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="#ef842d" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+
+        <meta property="og:url" content="https://tpca.netlify.app" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Poca" />
         <meta property="og:title" content="Poca - The Pomodoro Challenge App" />
@@ -30,7 +34,7 @@ export default function Home() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://tpca.netlify.app/" />
+        <meta property="twitter:url" content="https://tpca.netlify.app" />
         <meta property="twitter:site_name" content="Poca" />
         <meta
           property="twitter:title"
