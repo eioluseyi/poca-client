@@ -17,6 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#ef842d" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
 
         <meta property="og:url" content="https://tpca.netlify.app" />
         <meta property="og:type" content="website" />
