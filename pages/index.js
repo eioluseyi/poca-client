@@ -7,7 +7,21 @@ export default function Home() {
   return (
     <div className="App">
       <Head>
-        <title>Poca - The Pomodoro Challenge App</title>
+        <title>Poca - Pomodoro Challenge</title>
+        <meta
+          property="description"
+          content="The pomodoro challenge app designed to boost productivity"
+        />
+
+        <meta property="og:url" content="https://tpca.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Poca - The Pomodoro Challenge App" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:description"
+          content="The pomodoro challenge app designed to boost productivity"
+        />
+        {/* <meta property="og:image" content={"url of image"} /> */}
       </Head>
       <ChallengeWrapper />
       <ToastContainer
