@@ -3,14 +3,18 @@ import { toast } from "react-toastify";
 import { ChallengeContext } from "./ChallengeWrapper";
 
 const ShareProgress = () => {
-  const { localStorageData, formattedHistory } = useContext(ChallengeContext);
+  const { localStorageData, formattedHistory, hashTags } =
+    useContext(ChallengeContext);
 
   const handleShare = () => {
     const shareable =
       (localStorageData.history || []).reduce(
         (prev, curr) => prev + "\n\n" + curr,
         formattedHistory.join(" ")
-      ) + "\n\n#7DayChallenge\n#Celeforce";
+      ) +
+      `\n\n${
+        hashTags?.map((ht) => "#" + ht + "\n") || ""
+      }#Poca\ntpca.netlify.app`;
 
     const copyShareable = () => {
       navigator.clipboard.writeText(shareable).then(
